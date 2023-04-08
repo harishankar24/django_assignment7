@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from mixinApp import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('course/',views.CourseList.as_view()),
+    path('course/<int:pk>',views.CourseDetail.as_view()),
 ]
