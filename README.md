@@ -6,7 +6,7 @@ Database used: MySQL
 
 Model used: Passenger(firstName, lastName, email, rewardPoints)
 
-Performed CRUD operation using serializers.
+Performed CRUD operation using mixins.
 
 First class view performs non primary key based operations(Read, Create) & second class view performs primary key based operations(Update, Delete).
 
